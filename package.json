@@ -1,0 +1,43 @@
+{
+  "name": "KuiraSoft Page",
+  "version": "1.0.0",
+  "description": "Kuira Soft page with portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "copySiteMap": "copyfiles -f sitemap/* dist/sitemap",
+    "imagemin": "imagemin img/* --out-dir = dist/img/",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin restaurant.html -d dist --htmlmin -o dist/restaurant.html && usemin super.html -d dist --htmlmin -o dist/super.html && usemin pedido.html -d dist --htmlmin -o dist/pedido.html",
+    "build": "npm run clean && npm run copyfonts && npm run usemin && npm run copySiteMap && npm run imagemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodolfoDelgadoUNAM/KuirasoftPage.git"
+  },
+  "author": "Rodolfo Delgado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodolfoDelgadoUNAM/KuirasoftPage/issues"
+  },
+  "homepage": "https://github.com/RodolfoDelgadoUNAM/KuirasoftPage#readme",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.6.1",
+    "rimraf": "^2.6.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
