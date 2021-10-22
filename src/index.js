@@ -1,23 +1,13 @@
-/*!
-
-=========================================================
-* Black Dashboard React v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+/*
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+* Creado por creative TIM, Modificado por Rodolfo Delgado (KuiraSoft SAS de CV)
 
 */
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+
 
 import AdminLayout from "layouts/Admin/Admin.js";
 import RTLLayout from "layouts/RTL/RTL.js";
@@ -30,27 +20,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import ThemeContextWrapper from "./components/ThemeWrapper/ThemeWrapper";
 import BackgroundColorWrapper from "./components/BackgroundColorWrapper/BackgroundColorWrapper";
 
-// Firebase
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
-const firebaseConfig = {
-
-  apiKey: "AIzaSyDPMHoqAKg7m3VdWm_onUxpxT5rdPUYGIQ",
-  authDomain: "pagina-web-kuirasoft.firebaseapp.com",
-  databaseURL: "https://pagina-web-kuirasoft-default-rtdb.firebaseio.com",
-  projectId: "pagina-web-kuirasoft",
-  storageBucket: "pagina-web-kuirasoft.appspot.com",
-  messagingSenderId: "235090419499",
-  appId: "1:235090419499:web:378f75462127f73c68af6e",
-  measurementId: "G-JDXH2TE181"
-};
-
-// Initialize Firebase
-
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 ReactDOM.render(
   <ThemeContextWrapper>

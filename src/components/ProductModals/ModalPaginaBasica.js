@@ -16,6 +16,10 @@ const ModalDetalles = (props) => {
     lista8,
     lista9,
     lista10,
+    lista11,
+    lista12,
+    lista13,
+    lista14,
   } = props;
 
   const [modal, setModal] = useState(false);
@@ -58,6 +62,18 @@ const ModalDetalles = (props) => {
             </ol>
             <ol>
               {lista10}
+            </ol>
+            <ol>
+              {lista11}
+            </ol>
+            <ol>
+              {lista12}
+            </ol>
+            <ol>
+              {lista13}
+            </ol>
+            <ol>
+              {lista14}
             </ol>
           </ul>
         </ModalBody>

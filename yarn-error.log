@@ -1,0 +1,78 @@
+Arguments: 
+  X:\Programas\node.exe C:\Users\Rodolfo\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add formik
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Program Files\Oculus\Support\oculus-runtime;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;X:\Programas\;C:\ProgramData\chocolatey\bin;X:\Programas\Git\cmd;C:\Users\Rodolfo\AppData\Local\Microsoft\WindowsApps;X:\Programas\Microsoft VS Code\bin;X:\Programas\DataGrip 2020.3.2\bin;;C:\Users\Rodolfo\.dotnet\tools;C:\Users\Rodolfo\AppData\Roaming\npm;X:\Programas\WebStorm 2021.2\bin;
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'X:\Programador\DesarrolloWeb\KuiraSoftPagev2\node_modules\node-sass\vendor\win32-x64-83\binding.node'
+
+npm manifest: 
+  {
+    "name": "kuirasoft",
+    "version": "1.2.0",
+    "private": true,
+    "homepage": "https://kuirasoft.com",
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "5.15.1",
+      "bootstrap": "4.5.3",
+      "chart.js": "2.9.4",
+      "classnames": "2.2.6",
+      "firebase": "^9.0.0",
+      "node-sass": "4.14.1",
+      "node-sass-package-importer": "5.3.2",
+      "perfect-scrollbar": "1.5.0",
+      "prop-types": "15.7.2",
+      "react": "17.0.1",
+      "react-chartjs-2": "2.11.1",
+      "react-dom": "17.0.1",
+      "react-google-maps": "^9.4.5",
+      "react-notification-alert": "0.0.13",
+      "react-router-dom": "5.2.0",
+      "react-scripts": "4.0.1",
+      "reactstrap": "8.7.1"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject",
+      "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+      "compile-scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.css",
+      "minify-scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.min.css --output-style compressed",
+      "map-scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.css --source-map true"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ],
+    "optionalDependencies": {
+      "eslint-plugin-flowtype": "5.2.0",
+      "jquery": "3.5.1",
+      "typescript": "4.1.2"
+    },
+    "devDependencies": {
+      "gulp": "4.0.2",
+      "gulp-append-prepend": "1.0.8"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
