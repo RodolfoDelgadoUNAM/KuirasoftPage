@@ -1,6 +1,4 @@
 import React from 'react';
-import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
 import 
 { 
     Button, 
@@ -17,30 +15,6 @@ import
     Col
 } from 'reactstrap';
 
-
-
-
-const firebaseConfig = {
-
-    apiKey: "AIzaSyDPMHoqAKg7m3VdWm_onUxpxT5rdPUYGIQ",
-  
-    authDomain: "pagina-web-kuirasoft.firebaseapp.com",
-  
-    databaseURL: "https://pagina-web-kuirasoft-default-rtdb.firebaseio.com",
-  
-    projectId: "pagina-web-kuirasoft",
-  
-    storageBucket: "pagina-web-kuirasoft.appspot.com",
-  
-    messagingSenderId: "235090419499",
-  
-    appId: "1:235090419499:web:378f75462127f73c68af6e",
-  
-    measurementId: "G-JDXH2TE181"
-  
-  };
-
-const app = initializeApp(firebaseConfig);
 
 function Contacto(props){
   return (
