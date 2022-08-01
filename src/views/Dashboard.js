@@ -30,40 +30,13 @@ function Dashboard(props) {
   return (
     <>
       <div className="content">
-        <Row>
-          <Col xs="12">
-            <Card className="card-chart">
-              <CardHeader>
-                <Row>
-                  <Col className="text-center" sm="12">
-                    <CardTitle tag="h1">KuiraSoft S.A.S.</CardTitle>
-                  </Col>
-                  <Col className="text-center" sm="12">
-                    <CardTitle tag="h4">Creando soluciones virtuales integrales.</CardTitle>
-                  </Col>
-                </Row>
-              </CardHeader>
-              <CardBody className="text-center">
-                <Row>
-                <Col className="text-center" sm="12">
-                    <img
-                      alt="..."
-                      src={require("assets/img/KuiraLogo.png").default}
-                    />
-                </Col>
-                </Row> 
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
 
-        <Row>
-          
-        </Row>
 
         <div className="react-notification-alert-container">
           <NotificationAlert ref={notificationAlertRef} />
         </div>
+
+
         <Row>
         <Col md="12">
             <Card>
@@ -111,6 +84,30 @@ function Dashboard(props) {
                     </Col>
                   </Row>
                 </div>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col xs="12">
+            <Card className="card-chart">
+              <CardHeader>
+                <Row>
+                  <Col className="text-center" sm="12">
+                    <CardTitle tag="h1">Ultimas Noticias</CardTitle>
+                  </Col>
+                  <Col className="text-center" sm="12">
+                    <CardTitle tag="h4">Conoce nuestra aplicacion para calibrar miras con mas de 10k descargas en la playstore:</CardTitle>
+                  </Col>
+                </Row>
+              </CardHeader>
+              <CardBody className="text-center">
+                <Row>
+                <Col className="text-center" sm="12">
+                <iframe width="300" height="250" src="https://www.youtube.com/embed/SzWfnEyUsjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </Col>
+                </Row> 
               </CardBody>
             </Card>
           </Col>

@@ -10,6 +10,7 @@ import Historia from "views/Historia";
 import VR from "views/RealidadVirtual";
 import Web from "views/Web.js";
 import Contacto from "views/Contacto.js";
+import Juegos from "views/Videojuegos";
 
 var routes = [
   {
@@ -34,6 +35,14 @@ var routes = [
     rtlName: "NA",
     icon: "tim-icons icon-app",
     component: VR,
+    layout: "/admin",
+  },
+  {
+    path: "/Videojuegos",
+    name: "Videojuegos",
+    rtlName: "NA",
+    icon: "tim-icons icon-controller",
+    component: Juegos,
     layout: "/admin",
   },
   {

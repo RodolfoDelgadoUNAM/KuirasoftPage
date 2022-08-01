@@ -60,19 +60,7 @@ function Historia(props) {
                         </p>
                     </NavLink>
                 </NavItem>
-                <NavItem>
-                    <NavLink
-                        className={classnames({
-                            active:
-                                currentActiveTab === '3'
-                        })}
-                        onClick={() => { toggle('3'); }}
-                    >
-                        <p>
-                          Creador <i className="tim-icons icon-single-02"/>
-                        </p>
-                    </NavLink>
-                </NavItem>
+                
             </Nav>
 
             <TabContent activeTab={currentActiveTab}>
@@ -81,14 +69,11 @@ function Historia(props) {
                         <CardHeader>
                             <Row>
                                 <Col className="text-left" sm="12">
-                                    <CardTitle tag="h1">Inicios</CardTitle>
+                                    <CardTitle tag="h1">Sobre nosotros</CardTitle>
                                     <CardBody tag="h4">
                                         La empresa KuiraSoft S.A.S. de C.V. nacio en la ciudad de Puebla, Mexico 
-                                        en el año 2019. En un inicio nos enfocamos en 
-                                        la creacion de juegos y aplicaciones de realidad virtual para la plataforma
-                                        Oculus Quest. Posteriormente y debido a la demanda de soluciones integrales,
-                                        se comenzo con el desarrollo Web para impulsar los negocios de la region 
-                                        por medio del E-commerce.
+                                        en el año 2019. Dedicada a la creacion de juegos y aplicaciones de realidad virtual para la plataforma
+                                        Oculus Quest asi como paginas y aplicaciones Web
                                     </CardBody>
                                 </Col>
                             </Row>
@@ -107,9 +92,7 @@ function Historia(props) {
                                     rarámuri que habitan en algunas regiones del estado de Chihuahua, México..
                                     </CardBody>
                                     <CardBody tag="h4">
-                                    Kuira, que significa hola en lengua rarámuri, es la primer palabra que conforma el nombre de la empresa KuiraSoft y
-                                    es nuestra forma de saludar al mundo y hacerle saber el orgullo que sentimos por nuestros pueblos originarios.
-                            
+                                    Kuira, que significa hola en lengua rarámuri, es la primer palabra que conforma el nombre de la empresa KuiraSoft
                                     </CardBody>
                                 </Col>
                             </Row>
@@ -124,31 +107,7 @@ function Historia(props) {
                         </CardHeader>
                     </Card>
                 </TabPane>
-                <TabPane tabId="3" >
-                    <Card className="card-chart">
-                        <CardHeader>
-                            <Row>
-                            <Col className="text-left" sm="12">
-                                <CardTitle tag="h1">Creador</CardTitle>
-                                <CardBody tag="h4">
-                                    Rodolfo Delgado (Veracruz, Mexico 1990) es un Ingeniero Mecanico Electricista
-                                    egresado con honores de la Universidad Nacional Autonoma de Mexico, lugar 
-                                    donde actualmente tambien estudia la carrera de Informatica. Es fundador, principal promotor y 
-                                    desarrollador de KuiraSoft.
-                                </CardBody>
-                            </Col>
-                            </Row>
-                            <Row>
-                                <Col className="text-center" sm="12">
-                                    <img
-                                    alt="..."
-                                    src={require("assets/img/FotoFundador.jpg").default}
-                                    />
-                                </Col>
-                            </Row> 
-                        </CardHeader>
-                    </Card>
-                </TabPane>
+                
 
             </TabContent>
           </Col>
